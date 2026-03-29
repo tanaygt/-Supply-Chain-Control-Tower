@@ -1,0 +1,242 @@
+{
+  "inventory": [
+    {
+      "id": "INV001",
+      "name": "Steel Bolts M8",
+      "sku": "SKU-001",
+      "quantity": 1500,
+      "warehouse": "WH-A",
+      "reorder_point": 300,
+      "unit_cost": 0.5
+    },
+    {
+      "id": "INV002",
+      "name": "Copper Wire 2mm",
+      "sku": "SKU-002",
+      "quantity": 80,
+      "warehouse": "WH-B",
+      "reorder_point": 200,
+      "unit_cost": 3.2
+    },
+    {
+      "id": "INV003",
+      "name": "PVC Pipes 1inch",
+      "sku": "SKU-003",
+      "quantity": 420,
+      "warehouse": "WH-A",
+      "reorder_point": 100,
+      "unit_cost": 1.8
+    },
+    {
+      "id": "INV004",
+      "name": "Circuit Boards",
+      "sku": "SKU-004",
+      "quantity": 55,
+      "warehouse": "WH-C",
+      "reorder_point": 100,
+      "unit_cost": 45.0
+    },
+    {
+      "id": "INV005",
+      "name": "Rubber Gaskets",
+      "sku": "SKU-005",
+      "quantity": 2200,
+      "warehouse": "WH-B",
+      "reorder_point": 500,
+      "unit_cost": 0.25
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-001",
+      "product": "Steel Bolts M8",
+      "quantity": 500,
+      "status": "Completed",
+      "vendor": "MetalCo",
+      "date": "2024-01-10",
+      "total": 250.0
+    },
+    {
+      "id": "ORD-002",
+      "product": "Copper Wire 2mm",
+      "quantity": 300,
+      "status": "Processing",
+      "vendor": "WireTech",
+      "date": "2024-01-14",
+      "total": 960.0
+    },
+    {
+      "id": "ORD-003",
+      "product": "Circuit Boards",
+      "quantity": 100,
+      "status": "Pending",
+      "vendor": "ElectroParts",
+      "date": "2024-01-15",
+      "total": 4500.0
+    },
+    {
+      "id": "ORD-004",
+      "product": "PVC Pipes 1inch",
+      "quantity": 200,
+      "status": "Processing",
+      "vendor": "PolySupply",
+      "date": "2024-01-13",
+      "total": 360.0
+    },
+    {
+      "id": "ORD-005",
+      "product": "Rubber Gaskets",
+      "quantity": 1000,
+      "status": "Completed",
+      "vendor": "RubberWorld",
+      "date": "2024-01-08",
+      "total": 250.0
+    }
+  ],
+  "shipments": [
+    {
+      "id": "SHP-001",
+      "order_id": "ORD-001",
+      "carrier": "FedEx",
+      "status": "Pending",
+      "dispatch_date": "2024-01-11",
+      "expected_date": "2024-01-14",
+      "actual_date": "2024-01-14",
+      "delayed": true
+    },
+    {
+      "id": "SHP-002",
+      "order_id": "ORD-002",
+      "carrier": "DHL",
+      "status": "Dispatched",
+      "dispatch_date": "2024-01-15",
+      "expected_date": "2024-01-18",
+      "actual_date": null,
+      "delayed": false
+    },
+    {
+      "id": "SHP-003",
+      "order_id": "ORD-004",
+      "carrier": "UPS",
+      "status": "Dispatched",
+      "dispatch_date": "2024-01-14",
+      "expected_date": "2024-01-17",
+      "actual_date": null,
+      "delayed": true
+    },
+    {
+      "id": "SHP-004",
+      "order_id": "ORD-005",
+      "carrier": "FedEx",
+      "status": "Delivered",
+      "dispatch_date": "2024-01-09",
+      "expected_date": "2024-01-12",
+      "actual_date": "2024-01-13",
+      "delayed": true
+    }
+  ],
+  "vendors": [
+    {
+      "id": "VEN-001",
+      "name": "MetalCo",
+      "contact": "john@metalco.com",
+      "phone": "+1-555-0101",
+      "category": "Metals",
+      "score": 92,
+      "orders_fulfilled": 45,
+      "on_time_rate": 95
+    },
+    {
+      "id": "VEN-002",
+      "name": "WireTech",
+      "contact": "sales@wiretech.com",
+      "phone": "+1-555-0102",
+      "category": "Electronics",
+      "score": 78,
+      "orders_fulfilled": 30,
+      "on_time_rate": 80
+    },
+    {
+      "id": "VEN-003",
+      "name": "ElectroParts",
+      "contact": "info@electroparts.com",
+      "phone": "+1-555-0103",
+      "category": "Electronics",
+      "score": 85,
+      "orders_fulfilled": 22,
+      "on_time_rate": 88
+    },
+    {
+      "id": "VEN-004",
+      "name": "PolySupply",
+      "contact": "orders@polysupply.com",
+      "phone": "+1-555-0104",
+      "category": "Plastics",
+      "score": 70,
+      "orders_fulfilled": 18,
+      "on_time_rate": 72
+    },
+    {
+      "id": "VEN-005",
+      "name": "RubberWorld",
+      "contact": "rw@rubberworld.com",
+      "phone": "+1-555-0105",
+      "category": "Raw Materials",
+      "score": 88,
+      "orders_fulfilled": 37,
+      "on_time_rate": 91
+    },
+    {
+      "id": "VEN-0ABFDC",
+      "name": "Tanay",
+      "contact": "tanayshrivastava19@gmail.com",
+      "phone": "+62665534656",
+      "category": "Metals",
+      "score": 75,
+      "orders_fulfilled": 0,
+      "on_time_rate": 80
+    }
+  ],
+  "demand_history": {
+    "Steel Bolts M8": [
+      400,
+      450,
+      500,
+      420,
+      480,
+      510
+    ],
+    "Copper Wire 2mm": [
+      100,
+      120,
+      90,
+      130,
+      115,
+      125
+    ],
+    "PVC Pipes 1inch": [
+      80,
+      95,
+      110,
+      100,
+      90,
+      105
+    ],
+    "Circuit Boards": [
+      20,
+      25,
+      30,
+      22,
+      28,
+      35
+    ],
+    "Rubber Gaskets": [
+      600,
+      650,
+      700,
+      680,
+      720,
+      750
+    ]
+  }
+}
