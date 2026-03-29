@@ -76,6 +76,7 @@ A production-ready **Supply Chain Management Dashboard** built with **Streamlit*
 ---
 
 ## 📂 Project Structure
+```bash
 ├── main.py
 ├── inventory.py
 ├── orders.py
@@ -96,8 +97,9 @@ cd supply-chain-control-tower
 pip install -r requirements.txt
 streamlit run main.py
 
+---
 
-🧑‍💻 Author
+#🧑‍💻 Author
 
 Tanay Shrivastava
 
